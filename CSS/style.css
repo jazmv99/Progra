@@ -1,15 +1,47 @@
+.card-img-top {
+  width: 330px;
+  height: 250px; 
+  margin: auto;
+}
+
+.container{
+gap:5px;
+width: 100%;
+}
+
+.LOGO{
+    width: 190px;
+    height: 190px; 
+}
+
+body {
+  background-color: black;
+}
+
+.jumbotron {
+  background-color: rgb(240, 231, 203);
+  height: 8%;
+}
+
+.row{
+  gap:10px;
+  justify-content: center;
+}
+
 .card{
-    transition: all 2s ease;
+    transition: all 1s ease;
+    width: 330px; 
+    height: 300px;
+    border: 1px #f1a204 solid;
 }
+.jumbotron {
+  background-color: rgb(240, 231, 203);
+  height: 4%;
+ }
 
-.card :hover{
-    scale: 1.1;
-    transition: all 2s ease;
-}
-
-.card :hover{
-  scale: 1.1;
-  transition: all 2s ease;
+.card:hover{
+    scale: 1.03;
+    transition: all 1s ease;
 }
 
 .jumbotron {
@@ -18,16 +50,13 @@
 
 
 .contlog{
-  margin-bottom: 9.2%;
+  margin: auto;
+  width: 40%;
+  min-width: 500px;
 }
 
-
 footer {
-    padding: 10px 0; /* Espaciado vertical para el footer */
-    color: #343a40; /* Color del texto (puedes cambiarlo según tu preferencia) */
-    border-top: 1px solid #dee2e6; /* Borde superior para separar el footer del resto del contenido */
-    margin: 0%;
-    position:fixed;
+    position:absolute;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -37,15 +66,15 @@ footer {
 }
 
 .btn-carrito img {
-    width: 50px; /* Cambia este valor según el tamaño deseado */
-    height: auto; /* Mantiene la proporción de la imagen */
+    width: 50px; 
+    height: auto; 
   }
   
 .btn-carrito {
-    padding: 5px; /* Ajusta el espacio alrededor del botón */
+    padding: 5px; 
 }
 
-/* Estilo base */
+
 .neon-effect {
     color: rgb(12, 11, 11);
     font-size: 22px;
@@ -54,19 +83,17 @@ footer {
     text-decoration-line: none;
   }
 
-  /* Efecto neón al pasar el cursor */
   .neon-effect:hover {
+    background-color: #0c0c0c;
     color: rgb(5, 5, 5);
-    text-shadow: 0 0 5px #77530a, 0 0 10px #8f630b, 0 0 20px rgb(196, 144, 12), 0 0 40px #ffd277, 0 0 80px rgb(214, 190, 52);
+    text-shadow: 0 0 5px #77530a, 0 0 10px #8f630b, 0 0 20px rgb(196, 144, 12), 0 0 40px #252421, 0 0 80px rgb(214, 190, 52);
     border-color:  #ffd277;
     text-decoration-line: none;
     scale: 1.1;
   }
 
- /*boton*/
   .Dorado {
     border: 2px solid black;
-    /* Añade un borde negro de 2px */
     border-radius: 10px;
     background: linear-gradient(to right, #77530a, #ffd277, #77530a, #77530a, #ffd277, #77530a);
     background-size: 250%;
@@ -80,9 +107,32 @@ footer {
     overflow: hidden;
     transition-duration: 1s;
   }
-  
+
+ /*boton*/
+  .footer {
+    border: 2px solid black;
+    border-radius: 10px;
+    background: linear-gradient(to right, #77530a, #ffd277, #77530a, #77530a, #ffd277, #77530a);
+    background-size: 250%;
+    background-position: left;
+    color: #0c0c0c;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition-duration: 1s;
+    bottom: 0px;
+    position: fixed;
+  }
+
+
+  .footer:hover {
+    background-position: right;
+  }
+
   .Dorado::after {
-    /* Añade contenido al pseudo-elemento */
     position: absolute;
     top: 0;
     left: 0;
@@ -111,7 +161,7 @@ footer {
 
   /*Letras*/
   .DoradoL {
-    font-size: 24px; /* Tamaño del texto */
+    font-size: 24px; 
     font-weight: bold; /* Negrita para mejor visibilidad */
     background: linear-gradient(to right, #c88b0f, #ffd277, #77530a, #ad7b17, #ffd277, #875f0f);
     background-clip: text;
@@ -181,21 +231,7 @@ a.neon-effect.Dorado {
   font-weight: bold;
   font-size: 18px;
 }
-/*lista*/
 
- /* Cambiar el tamaño del div cuando la pantalla es menor o igual a 768px (tablet) */
- @media screen and (max-width: 768px) {
-  .contlog {
-      width: 80%; /* Cambiar el ancho a 80% cuando la pantalla sea pequeña */
-  }
-}
-
-/* Cambiar el tamaño del div cuando la pantalla es menor o igual a 480px (móvil) */
-@media screen and (max-width: 480px) {
-  .contlog {
-      width: 100%; /* Ancho al 100% en pantallas más pequeñas */
-  }
-}
 
 .imacentrada{
   display: flex;
